@@ -17,7 +17,7 @@ const handlebars = require('express-handlebars');
 
 
 app.set('view engine', 'handlebars')
-app.engine('handlebars', handlebars({
+app.engine('handlebars', 'handlebars'({
     layoutsDir: __dirname + '/views/layouts',
 }))
 app.get('/', function (req, res) {
